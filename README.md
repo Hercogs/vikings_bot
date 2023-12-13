@@ -13,7 +13,7 @@ git clone [URL]
 git submodule init
 git submodule update
 ```
-To update repo, use: `git submodule update --recursive`
+To update repo, use: `git submodule update --recursive --remote`
 
 ### Important
 __To make Nav2 working, chnage `vikings_bot_path_planner_server` config file `*bt_navigator` line `default_nav_to_pose_bt_xml: "/home/hercogs/ros2_ws/src/vikings_bot/vikings_bot_path_planner_server/config/behavior.xml"` to your actual file path!__
