@@ -9,6 +9,7 @@ Description: _contains files to bringup files related with Vikings Bot project_
 
 __To clone this project:__
 ```
+mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 git clone git@github.com:Hercogs/vikings_bot.git -b dev_kriss
 git submodule init
