@@ -1,28 +1,32 @@
 [submodule "vikings_bot_bringup"]
 	path = vikings_bot_bringup
 	url = git@github.com:Hercogs/vikings_bot_bringup.git
-	branch = main
+	branch = dev_kriss
 [submodule "vikings_bot_cartographer_slam"]
 	path = vikings_bot_cartographer_slam
 	url = git@github.com:Hercogs/vikings_bot_cartographer_slam.git
-	branch = main
+	branch = dev_kriss
 [submodule "vikings_bot_description"]
 	path = vikings_bot_description
 	url = https://github.com/Hercogs/vikings_bot_description.git
-	branch = main
+	branch = dev_kriss
 [submodule "vikings_bot_gazebo"]
 	path = vikings_bot_gazebo
 	url = https://github.com/Hercogs/vikings_bot_gazebo.git
-	branch = main
+	branch = dev_kriss
 [submodule "vikings_bot_localization_server"]
 	path = vikings_bot_localization_server
 	url = git@github.com:Hercogs/vikings_bot_localization_server.git
-	branch = main
+	branch = dev_kriss
 [submodule "vikings_bot_map_server"]
 	path = vikings_bot_map_server
 	url = git@github.com:Hercogs/vikings_bot_map_server.git
-	branch = main
+	branch = dev_kriss
 [submodule "vikings_bot_path_planner_server"]
 	path = vikings_bot_path_planner_server
 	url = git@github.com:Hercogs/vikings_bot_path_planner_server.git
-	branch = main
+	branch = dev_kriss
+[submodule "vikings_bot_point_cloud_processor"]
+	path = vikings_bot_point_cloud_processor
+	url = git@github.com:Kriss213/vikings_bot_point_cloud_processor.git
+	branch = dev_kriss
