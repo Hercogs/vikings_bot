@@ -12,15 +12,18 @@ __To clone this project:__
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 git clone git@github.com:Hercogs/vikings_bot.git -b dev_kriss
+cd ~/ros2_ws/src/vikings_bot
 git submodule init
 git submodule update
+git submodule update --recursive --remote
 
 # clone external directories
+cd ~/ros2_ws/src
 git clone git@github.com:pal-robotics/realsense_gazebo_plugin.git -b foxy-devel
 git clone git@github.com:IntelRealSense/realsense-ros.git
 
 # build
-cd ~/ros2_ws/src
+cd ~/ros2_ws
 colcon build
 ```
 To update repo, use: `git submodule update --recursive --remote`
