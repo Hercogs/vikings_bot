@@ -1,6 +1,6 @@
 # Vikings Bot bringup package
 <hr>
-Description: _contains files to bringup files related with Vikings Bot project_
+Description: contains files to bringup files related with Vikings Bot project
 <hr>
 
 ### Dependencies: ...
@@ -17,20 +17,24 @@ git submodule init
 git submodule update
 git submodule update --recursive --remote
 
-# clone external directories
+# clone external dependencies
 cd ~/ros2_ws/src
 git clone git@github.com:pal-robotics/realsense_gazebo_plugin.git -b foxy-devel
 git clone git@github.com:IntelRealSense/realsense-ros.git
 
-# build
+# build (realsense2_camera requires realsense sdk, it is not needed for simulation)
 cd ~/ros2_ws
-colcon build
+colcon build --packages-skip realsense2_camera
+source install/setup.bash
 ```
-To update repo, use: `git submodule update --recursive --remote`
+To update repo, use:
+```
+git submodule update --recursive --remote
+```
 
 ### Important
 * __To make Nav2 working, chnage `vikings_bot_path_planner_server` config file `*bt_navigator` line `default_nav_to_pose_bt_xml: "/home/hercogs/ros2_ws/src/vikings_bot/vikings_bot_path_planner_server/config/behavior.xml"` to your actual file path!__
-* __Don't forget to install external directories!__
+* __Don't forget to install external dependencies!__
 
 <hr>
 
